@@ -1,0 +1,231 @@
+/* colors */
+ :root {
+     --main-color: #3D99F5;
+     --button-color: #000;
+     --button-background-color:#0a77e4; 
+     --body-color: #fff;
+     --header-background-color: rgb(238, 238, 238);
+     --services-background-color:  rgba(255, 255, 255, 0.664);
+     --services-background-color-hover: rgb(255, 255, 255);
+     --services-box-shadow: 0 0px 5px rgb(94, 94, 94) ;
+
+ }
+body{
+    background-color: var(--body-color)
+}
+.header{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--header-background-color);
+    
+}
+
+.navbar-brand{
+    margin-left: 50px;
+}
+#navbarNavDropdown{
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+#navbarDropdownMenuLink{
+    margin-right: 20px;
+}
+.background_image_1{
+    background-image: url(./assets/Group\ 21.svg);
+    width: 1380px;
+    height: 597.78px;
+    position: fixed ;
+    top: 280px;
+    left: 0px;
+    margin-right: 10%;
+}
+.background_image_2{
+    background-image: url(./assets/Group\ 20.svg);
+    width: 891.48px;
+    height: 514.88px;
+    position: fixed ;
+    top: 350px;
+    left: 870px;
+    margin-right: 10%;
+}
+.github-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    
+}
+#navbar-brand{
+    color: var(--button-color);
+}
+#navbarDropdownMenuLink{
+    color: var(--button-color);
+}
+
+#nav-button{
+    color: var(--button-background-color);
+    border-color: var(--button-background-color);
+}
+#nav-button:hover{
+    color: var(--button-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+h1{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --main-color: #3D99F5;
+    --button-color: #fff;
+    --button-background-color:#0a77e4; 
+    --body-color: #000;
+    --header-background-color: rgb(37, 37, 37);
+    --services-background-color:  rgba(0, 0, 0, 0.664);
+    --services-background-color-hover: rgb(0, 0, 0);
+    --services-box-shadow: 0 0px 5px rgb(206, 206, 206) ;
+
+
+}
+
+/*========== Button Dark/Light ==========*/
+
+.change-theme{
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    top: 3px;
+    color: var(--button-color);
+}
+
+
+.change-theme:hover{
+    color: var(--main-color);
+}
+
+/*==================== BUTTONS ====================*/
+
+.row{
+    justify-content: center;
+}
+.services__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.services__content{
+    position: relative;
+    width: 200px;
+    background-color: var(--services-background-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--services-box-shadow);
+    transition: .3s;
+}
+
+.services__content:hover{
+    box-shadow: 0 0px 8px var(--main-color);
+    background-color: var(--services-background-color-hover);
+}
+
+.services__icon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.services__title{
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--button-color);
+}
+
+.services__button{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.services__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+#service_1{
+    margin: 15px;
+}
+.services__button{
+    display: inline-flex;
+    align-items: center;
+    padding: .75rem 1rem;
+    padding: 0;
+    background-color: transparent;
+    color: var(--main-color);
+}
+.services__button:hover{
+    color: var(--button-color);
+}
+.h1-c1{
+    color: var(--button-color);
+}
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    opacity: 100;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services__modal-content{
+    position: relative;
+    background-color: var(--body-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.services__modal-services{
+    row-gap: 1rem;
+}
+
+.services__modal-service{
+    display: flex;
+}
+
+.services__modal-title{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.services__modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+.services__modal-icon{
+    color: var(--button-color);
+    margin-right:  .25rem;
+}
+
